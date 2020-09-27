@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Login</title>
+	<style>   
+Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-image: url("F:/xampp/htdocs/Images/homepage3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+	background-size:auto;
+	background-color: rgba(35, 143, 205, 1);  
+}  
+button {   
+        background-color: #4CAF50;   
+        width: 75px;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;
+        position: relative;   
+        }   
+ form {   
+        border: 0px solid #f1f1f1;
+        width: 700px;  
+        position: center; 
+    }   
+ input[type=text], input[type=password] {   
+        width: 200px;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  /* .btn {   
+        background-color: #4CAF50;   
+        width: 75px;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;
+        position: relative;   
+        }    */
+  .cancelbtn {   
+        width: 75px;   
+        padding: 15px;  
+        margin: 10px 5px; 
+        background-color: #4CAF50; 
+        color: orange;
+        border: none;   
+        cursor: pointer;
+        position: relative;   
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        align-content: center;
+        opacity: 1.0;
+    }   
+</style>   
+</head>
+<body>
+		<img src="F:/xampp/htdocs/Images/tagline.png" height="120" width="200" align="right">
+		<table><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="right">
+		 <font size="7" face="Times New Roman" color="White"> Employee Login </font>
+		  </td></tr></table> 
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <img src="F:/xampp/htdocs/Images/cement.png" height="250" width="200" align="right">
+    <form>  
+        <div class="container">   
+        <table>
+        	<tr>
+            <td>Username : </td>   
+            <td><input type="text" placeholder="Enter Username" name="username" required> </td> 
+            <td><input type="checkbox" checked="checked"> Remember me </td>
+        	</tr>
+        	<tr>
+            <td>Password : </td>   
+            <td><input type="password" placeholder="Enter Password" name="password" required> </td>
+            <td>Forgot <a href="#"> password? </a></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td>
+             <button type="submit">Login</button>
+            	<!--<a class="btn" type="submit" href="F:\xampp\htdocs\homepage1.html">Login</a></td>-->
+            	<a class="cancelbtn" type="button" href="F:\xampp\htdocs\homepage1.html">Cancel</a></td>
+           <!-- <button type="button" class="cancelbtn" href="F:\xampp\htdocs\homepage1.html">Cancel</button></td>-->
+            <td></td>
+            </tr>
+        </table>
+                          
+        </div>   
+    </form>     
+</body>
+</html>
