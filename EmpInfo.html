@@ -1,0 +1,553 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Employee Information</title>
+	<link rel="stylesheet" href="EmpInfo.css">
+</head>
+	<SCRIPT language="javascript">
+		/*function addRow(tableID) {
+
+			var table = document.getElementById(tableID);
+
+			var rowCount = table.rows.length;
+			var row = table.insertRow(rowCount);
+
+			var cell1 = row.insertCell(0);
+			var element1 = document.createElement("input");
+			element1.type = "checkbox";
+			element1.name="chkbox[]";
+			cell1.appendChild(element1);
+
+			var cell2 = row.insertCell(1);
+			cell2.innerHTML = rowCount ; 	//to display kra no
+
+			var cell3 = row.insertCell(2);
+			var element2 = document.createElement("input");
+			element2.type = "text";
+			element2.name = "txtbox[]";
+			cell3.appendChild(element2);
+
+			var cell4 = row.insertCell(3);
+			var element3 = document.createElement("input");
+			element3.type = "text";
+			element3.name = "txtbox[]";
+			cell4.appendChild(element3);
+
+			var cell5 = row.insertCell(4);
+			var element4 = document.createElement("input");
+			element4.type = "text";
+			element4.name = "txtbox[]";
+			cell5.appendChild(element4);
+
+			var cell6 = row.insertCell(5);
+			var element5 = document.createElement("input");
+			element5.type = "text";
+			element5.name = "txtbox[]";
+			cell6.appendChild(element5);
+
+			
+			var cell7 = row.insertCell(6);
+			var element6 = document.createElement("input");
+			element6.type = "text";
+			element6.name = "txtbox[]";
+			cell7.appendChild(element6);
+
+			var cell8 = row.insertCell(7);
+			var element7 = document.createElement("input");
+			element7.type = "text";
+			element7.name = "txtbox[]";
+			cell8.appendChild(element7);
+
+			var cell9 = row.insertCell(8);
+			var element8 = document.createElement("input");
+			element8.type = "text";
+			element8.name = "txtbox[]";
+			cell9.appendChild(element8);
+
+		}
+
+		function deleteRow(tableID) {
+			try {
+			var table = document.getElementById(tableID);
+			var rowCount = table.rows.length;
+
+			for(var i=0; i<rowCount; i++) {
+				var row = table.rows[i];
+				var chkbox = row.cells[0].childNodes[0];
+				if(null != chkbox && true == chkbox.checked) {
+					table.deleteRow(i);
+					rowCount--;
+					i--;
+				}
+
+
+			}
+			}catch(e) {
+				alert(e);
+			}
+		}*/
+
+	</SCRIPT>
+
+<body background="F:/xampp/htdocs/Images/wood (6).jpg">
+	<img src="F:/xampp/htdocs/Images/tagline.png" height="120" width="200" align="right">
+	<!-- <marquee><b><i><font size="25" color="orange" face="algerian">HR Mitra </font></i></b>
+		<font size="5" color="White" face="algerian"> : A Complete Solution for HR......    Developed By : Kshitij Kumar (Bennett University)</font></marquee> -->
+	<div class="main-nav">
+		<ul>
+			<li><a href="#Official Details">Official Details</a></li>
+			<li><a href="#Personal Details">Personal Details</a></li>
+			<li><a href="#Goal Setting">Goal Setting</a></li>
+			<li><a href="#User/Superuser">User/Superuser</a></li>
+			<li><a href="a">Interest Area</a></li>
+			<li><a href="a">Suggestions</a></li>
+			<li><a href="F:\xampp\htdocs\homepage1.html">Logout</a></li>
+		</ul>
+	</div>
+		<br>
+		  <br>
+	<table><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="right">
+		 <font size="6" face="Times New Roman" color=#3333cc id="Official Details"> Official Details </font>
+		  </td></tr></table> 
+		  <br>
+		  <br>
+
+	<form>  
+        <div class="container">   
+        <table>
+        	<tr>
+            <td>Employee ID : </td>   
+            <td><input type="text" name="Emp_ID" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Employee Name : </td>   
+            <td><input type="text"  name="Name" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Department No. : </td>   
+            <td><input type="text"  name="Dept_No" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Date of Joining : </td>   
+            <td><input type="text" name="DOJ" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Designation : </td>   
+            <td><input type="text" name="Desig." required></td>
+        	</tr>
+    	</table>
+        </div>  
+    </form>
+    <br>
+    <br>
+    <hr>
+    <table><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="right">
+		 <font size="6" face="Times New Roman" color=#3333cc id="Personal Details"> Personal Details </font>
+		  </td></tr></table> 
+		 
+		  
+    <form>
+          <div class="container">   
+        <table>
+        	<tr>
+            <td>Employee ID : </td>   
+            <td><input type="text" size="50" name="Emp_ID" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Employee Name : </td>   
+            <td><input type="text" size="50" name="Name" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Father's Name : </td>   
+            <td><input type="text" size="50" name="F_Name" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Mother's Name : </td>   
+            <td><input type="text" size="50" name="M_Name" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Date of Birth : </td>   
+            <td><input type="text" size="50" name="DOB" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Gender : </td>   
+            <td><input type="text" size="50" name="Gender" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Current Address : </td>   
+           <!-- <td><input type="text"  name="C_Add" required></td>-->
+            <td><textarea name="message" rows="3" cols="47" ></textarea></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Permanent Address : </td>   
+            <td><textarea name="message" rows="3" cols="47" ></textarea></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Blood Group : </td>   
+            <td><input type="text" size="50" name="B_grp" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Marital Status : </td>   
+            <td><input type="text" size="50" name="Status" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Aadhar No. : </td>   
+            <td><input type="text" size="50" name="Number" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Pan No. : </td>   
+            <td><input type="text" size="50" name="Number" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Religion : </td>   
+            <td><input type="text" size="50" name="Religion" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Nationality : </td>   
+            <td><input type="text" size="50" name="Country" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Contact No. : </td>   
+            <td><input type="text" size="50" name="Cont. no." required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Gender : </td>   
+            <td><input type="text" size="50" name="Emergency no." required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>E-mail ID : </td>   
+            <td><input type="text" size="50" name="ID" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Nominee: </td>   
+            <td><input type="text" size="50" name="Name" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr>
+            <td>Relationship with Nominee : </td>   
+            <td><input type="text" size="50" name="Relationship" required></td>
+        	</tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+        	<tr><td></td></tr>
+           	<br>
+        	<br>
+    	</table>
+    	
+    	<hr>
+    	<br>
+    	</div>
+    </form> 
+    <br><br><br>
+    <table><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="right">
+		 <font size="6" face="Times New Roman" color=#3333cc id="Goal Setting"> Goal Setting </font>
+		  </td></tr></table> 
+		  <br>
+		  <br>
+   <!-- <INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />
+
+	<INPUT type="button" value="Delete Row" onclick="deleteRow('dataTable')" />-->
+	<INPUT type="button" value="Edit" onclick="EditData('dataTable')" style="margin:15px;"/>
+	<INPUT type="button" value="Save" onclick="saveData('dataTable')"/>
+	<br>
+	<TABLE id="dataTable" border="1">
+		<TR>
+			<!--<th>Select</th>-->
+			<th width="25">KRA No.</th>
+			<th>Key Result Areas</th>
+			<th>Key Performance Indicators</th>
+			<th>Weight of KPIs</th>
+			<th>Target</th>
+			<th>Actual</th>
+			<th>Score</th>
+			<th>Final Score</th>
+		</TR>
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 1 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 2 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 3 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 4 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 5 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+		
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 6 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 7 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 8 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 9 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+
+		<TR height="30">
+			<!--<TD><INPUT type="checkbox" name="chk[]"/></TD>-->
+			<TD> 10 </TD>
+			<TD> <INPUT type="text[]" size="35" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="65" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>	<!-- User can't enter final score-->
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+			<TD> <INPUT type="text[]" size="12" style="height:30px;"/> </TD>
+		</TR>
+	</TABLE>
+	 <br><br><hr>
+	 <br><br><br><br><br><br><br>
+	<table><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="right">
+		 <font size="6" face="Times New Roman" color=#3333cc id="User/Superuser"> User/Superuser </font>
+		  </td></tr></table> 
+		  <br>
+		  <br>
+	<!--<INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />
+
+	<INPUT type="button" value="Delete Row" onclick="deleteRow('dataTable')" />-->
+
+	<!-- USER & SUPERUSER-->
+
+	<TABLE id="dataTable" width="350px" border="1">
+		<TR>
+			<th>S.No.</th>
+			<th>Category</th>
+			<th>Choice</th>
+		</TR>
+		<TR>
+			<!--<TD><INPUT type="checkbox" name="chk"/></TD>-->
+			<td>1</td>
+			<TD><INPUT type="text" name="txt" size="35" style="height:30px;"/></TD>
+			<TD>
+				<SELECT name="Choice">
+					<OPTION value="u">User</OPTION>
+					<OPTION value="su">Superuser</OPTION>
+				</SELECT>
+			</TD>
+		</TR>
+		<TR>
+			<!--<TD><INPUT type="checkbox" name="chk"/></TD>-->
+			<td>2</td>
+			<TD><INPUT type="text" name="txt" size="35" style="height:30px;"/></TD>
+			<TD>
+				<SELECT name="Choice">
+					<OPTION value="u">User</OPTION>
+					<OPTION value="su">Superuser</OPTION>
+				</SELECT>
+			</TD>
+		</TR>
+		<TR>
+			<!--<TD><INPUT type="checkbox" name="chk"/></TD>-->
+			<td>3</td>
+			<TD><INPUT type="text" name="txt" size="35" style="height:30px;"/></TD>
+			<TD>
+				<SELECT name="Choice">
+					<OPTION value="u">User</OPTION>
+					<OPTION value="su">Superuser</OPTION>
+				</SELECT>
+			</TD>
+		</TR>
+		<TR>
+			<!--<TD><INPUT type="checkbox" name="chk"/></TD>-->
+			<td>4</td>
+			<TD><INPUT type="text" name="txt" size="35" style="height:30px;"/></TD>
+			<TD>
+				<SELECT name="Choice">
+					<OPTION value="u">User</OPTION>
+					<OPTION value="su">Superuser</OPTION>
+				</SELECT>
+			</TD>
+		</TR>
+		<TR>
+			<!--<TD><INPUT type="checkbox" name="chk"/></TD>-->
+			<td>5</td>
+			<TD><INPUT type="text" name="txt" size="35" style="height:30px;"/></TD>
+			<TD>
+				<SELECT name="Choice">
+					<OPTION value="u">User</OPTION>
+					<OPTION value="su">Superuser</OPTION>
+				</SELECT>
+			</TD>
+		</TR>
+	</TABLE>
+
+
+   
+
+<!-- <img src="F:/xampp/htdocs/Images/tagline.png" height="120" width="200">
+<img src="F:/xampp/htdocs/Images/hrmitra.png" height="120" width="200" align="right">
+<br>-->
+
+</body>

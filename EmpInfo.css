@@ -1,0 +1,47 @@
+<style>
+	/*body{
+		background-image: url("F:/xampp/htdocs/Images/homepage2.png");
+		background-repeat: no-repeat;
+		box-sizing: border-box;
+		background-position: top;
+		background-size:auto;
+		background-color: rgba(35, 143, 205, 1);
+	}*/
+
+	* {padding: 0;margin:0;}
+	a {text-decoration: none;}
+	li {list-style: none;}
+
+/* Navigation styling*/
+.main-nav {
+	text-align: center;
+	 background: #3333cc;
+
+	}
+
+.main-nav ul{
+
+	color: #FFF;
+	display: inline-flex;
+	list-style: none;
+}
+/*.main-nav ul li{
+	
+}*/
+.main-nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	width: 120px;
+	height: 30px;
+	margin: 12px;
+	padding: 15px;
+	}
+.main-nav a:hover {
+    height: 25px; 
+    width: 122px;
+	background: rgba(121,165,162,1.00);
+    }
+
+    </style>
